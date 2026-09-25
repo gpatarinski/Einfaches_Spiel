@@ -1,5 +1,4 @@
-package model;
-import java.util.*;
+package gpatarinski.model;
 import java.util.Random;
 
 public class GewinnModel {
