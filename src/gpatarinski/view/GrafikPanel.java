@@ -47,7 +47,7 @@ public class GrafikPanel extends JPanel {
         this.nochMalBtn.addActionListener(controller);
         this.nochMalBtn.setActionCommand("btn");
         this.eingabe.addActionListener(controller);
-        this.nochMalBtn.setActionCommand("eingabe");
+        this.eingabe.setActionCommand("eingabe");
 
         this.add(northPanel, BorderLayout.NORTH);
         this.add(centerPanel, BorderLayout.CENTER);

@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f598b028-afef-4273-a6c4-71093a135c78" name="Changes" comment="Branch für View und Controller erstellen und GrafikFrame fertiggestellt und GrafikPanel angefangen">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Einfaches Spiel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Einfaches Spiel.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/src/gpatarinski/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gpatarinski/controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/src/gpatarinski/model/GewinnModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gpatarinski/model/GewinnModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/src/gpatarinski/view/GrafikFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gpatarinski/view/GrafikFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/src/gpatarinski/view/GrafikPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gpatarinski/view/GrafikPanel.java" afterDir="false" />
+    <list default="true" id="f598b028-afef-4273-a6c4-71093a135c78" name="Changes" comment="Files wurden nicht anerkannt wegen Hierarchie also musste ich umändern">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gpatarinski/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gpatarinski/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gpatarinski/model/GewinnModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gpatarinski/model/GewinnModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gpatarinski/view/GrafikPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gpatarinski/view/GrafikPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +61,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Controller.executor": "Run",
     "Application.controller.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.MCP Project settings loaded": "true",
@@ -79,8 +78,8 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -132,7 +131,15 @@
       <option name="project" value="LOCAL" />
       <updated>1791746387932</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Files wurden nicht anerkannt wegen Hierarchie also musste ich umändern">
+      <option name="closed" value="true" />
+      <created>1791747191119</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1791747191119</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +151,7 @@
     <MESSAGE value="First Commit to allow branch creation" />
     <MESSAGE value="Model zu HEAD gemerged" />
     <MESSAGE value="Branch für View und Controller erstellen und GrafikFrame fertiggestellt und GrafikPanel angefangen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Branch für View und Controller erstellen und GrafikFrame fertiggestellt und GrafikPanel angefangen" />
+    <MESSAGE value="Files wurden nicht anerkannt wegen Hierarchie also musste ich umändern" />
+    <option name="LAST_COMMIT_MESSAGE" value="Files wurden nicht anerkannt wegen Hierarchie also musste ich umändern" />
   </component>
 </project>

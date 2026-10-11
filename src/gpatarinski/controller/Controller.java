@@ -50,7 +50,12 @@ public class Controller implements ActionListener {
             }
             panel.setComputerPunkte(Integer.toString(model.getComputerZahl()));
             panel.setGesamtPunkte(Integer.toString(model.getGesamtPunkte()));
+
         } else if (e.getActionCommand().equals("btn")) {
+            if (model.hatGewonnen() || model.hatVerloren()) {
+                model.reset();
+                panel.setGesamtPunkte("Gesamtpunkte: " + model.getGesamtPunkte());
+            }
             panel.setEingabeEditable(true);
             panel.setNochMalBtnEnabled(false);
             panel.setComputerPunkte("");

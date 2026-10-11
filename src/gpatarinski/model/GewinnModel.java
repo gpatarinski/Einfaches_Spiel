@@ -26,6 +26,11 @@ public class GewinnModel {
         }
         this.gesamtPunkte += this.rundenErgebnis;
     }
+    public void reset() {
+        gesamtPunkte = 30;
+        rundenErgebnis = 0;
+        computerZahl = 0;
+    }
     public boolean hatGewonnen() {
         return gesamtPunkte >= 100;
     }
@@ -41,4 +46,5 @@ public class GewinnModel {
     public int getRundenErgebnis() {
         return rundenErgebnis;
     }
+
 }
