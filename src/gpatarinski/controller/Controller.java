@@ -9,10 +9,10 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class controller implements ActionListener {
+public class Controller implements ActionListener {
     private final GrafikFrame view;
     private final GewinnModel model;
-    public controller() {
+    public Controller() {
         this.view = new GrafikFrame(this);
         this.model = new GewinnModel();
     }
@@ -61,5 +61,5 @@ public class controller implements ActionListener {
         }
     }
 
-    public static void main(String[] args) {new controller();}
+    public static void main(String[] args) {new Controller();}
 }
