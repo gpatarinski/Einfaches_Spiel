@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f598b028-afef-4273-a6c4-71093a135c78" name="Changes" comment="First Commit to allow branch creation" />
+    <list default="true" id="f598b028-afef-4273-a6c4-71093a135c78" name="Changes" comment="Model zu HEAD gemerged">
+      <change afterPath="$PROJECT_DIR$/.idea/src/gpatarinski/view/GrafikFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/src/gpatarinski/view/GrafikPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,7 +65,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "view",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -104,7 +108,15 @@
       <option name="project" value="LOCAL" />
       <updated>1791745095544</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Model zu HEAD gemerged">
+      <option name="closed" value="true" />
+      <created>1791745763207</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1791745763207</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +126,7 @@
     <MESSAGE value="ad" />
     <MESSAGE value="a" />
     <MESSAGE value="First Commit to allow branch creation" />
-    <option name="LAST_COMMIT_MESSAGE" value="First Commit to allow branch creation" />
+    <MESSAGE value="Model zu HEAD gemerged" />
+    <option name="LAST_COMMIT_MESSAGE" value="Model zu HEAD gemerged" />
   </component>
 </project>
