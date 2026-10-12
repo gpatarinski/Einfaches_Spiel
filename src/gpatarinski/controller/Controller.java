@@ -4,17 +4,16 @@ import gpatarinski.model.GewinnModel;
 import gpatarinski.view.GrafikFrame;
 import gpatarinski.view.GrafikPanel;
 
-import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Controller implements ActionListener {
     private final GrafikFrame view;
-    private final GewinnModel model;
+    private GewinnModel model;
+
     public Controller() {
-        this.view = new GrafikFrame(this);
         this.model = new GewinnModel();
+        this.view = new GrafikFrame(this);
     }
 
     @Override
@@ -28,43 +27,29 @@ public class Controller implements ActionListener {
                 return;
             }
             model.berechneRunde(eingabe);
-            panel.setEingabeEditable(false);
-            panel.setNochMalBtnEnabled(true);
+            // --- Oberflächen-Update nach der Auswertung ---
             if (model.hatGewonnen()) {
                 panel.setRundenErgebnis("Gewonnen");
-                panel.setRundenErgebnis(Color.GREEN);
-            }
-            else if (model.hatVerloren()) {
+            } else if (model.hatVerloren()) {
                 panel.setRundenErgebnis("Verloren");
-                panel.setRundenErgebnis(Color.RED);
-            }
-            else {
+            } else {
                 panel.setRundenErgebnis(Integer.toString(model.getRundenErgebnis()));
-                if (model.getRundenErgebnis() > 0) {
-                    panel.setRundenErgebnis(Color.GREEN);
-                    panel.setGesamtPunkte(Color.GREEN);
-                } else if (model.getRundenErgebnis() < 0) {
-                    panel.setRundenErgebnis(Color.RED);
-                    panel.setGesamtPunkte(Color.RED);
-                }
             }
             panel.setComputerPunkte(Integer.toString(model.getComputerZahl()));
-            panel.setGesamtPunkte(Integer.toString(model.getGesamtPunkte()));
-
+            panel.setGesamtPunkte("Gesamtpunkte: " + model.getGesamtPunkte());
+            // --- Ende Update ---
         } else if (e.getActionCommand().equals("btn")) {
             if (model.hatGewonnen() || model.hatVerloren()) {
-                model.reset();
-                panel.setGesamtPunkte("Gesamtpunkte: " + model.getGesamtPunkte());
+                model = new GewinnModel();
             }
-            panel.setEingabeEditable(true);
-            panel.setNochMalBtnEnabled(false);
             panel.setComputerPunkte("");
             panel.setRundenErgebnis("");
             panel.setEingabeValue("");
-            panel.setRundenErgebnis(Color.WHITE);
-            panel.setGesamtPunkte(Color.WHITE);
+            panel.setGesamtPunkte("Gesamtpunkte: " + model.getGesamtPunkte());
         }
     }
 
-    public static void main(String[] args) {new Controller();}
+    public static void main(String[] args) {
+        new Controller();
+    }
 }

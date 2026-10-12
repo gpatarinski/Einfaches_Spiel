@@ -54,12 +54,6 @@ public class GrafikPanel extends JPanel {
         this.add(southPanel, BorderLayout.SOUTH);
     }
     // Code for controller (Btn & Eingabe)
-    public void setEingabeEditable(boolean editable) {
-        this.eingabe.setEditable(editable);
-    }
-    public void setNochMalBtnEnabled(boolean enabled) {
-        this.nochMalBtn.setEnabled(enabled);
-    }
     public String getEingabeValue() {
         return this.eingabe.getText().trim();
     }
@@ -72,16 +66,10 @@ public class GrafikPanel extends JPanel {
     public void setRundenErgebnis(String rundenErgebnis) {
         this.rundenErgebnis.setText(rundenErgebnis);
     }
-    public void setRundenErgebnis(Color color) {
-        this.rundenErgebnis.setBackground(color);
-    }
     public void setGesamtPunkte(String gesamtPunkte) {
         this.gesamtPunkte.setText(gesamtPunkte);
     }
-    public void setGesamtPunkte(Color color) {
-        this.gesamtPunkte.setBackground(color);
-    }
-    public void setComputerPunkte(String computerPunkte) {
+        public void setComputerPunkte(String computerPunkte) {
         this.computerPunkte.setText(computerPunkte);
     }
 }
