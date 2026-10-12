@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f598b028-afef-4273-a6c4-71093a135c78" name="Changes" comment="Änderungen">
+    <list default="true" id="f598b028-afef-4273-a6c4-71093a135c78" name="Changes" comment="Änderungen damit das Programm endlich richtig funktioniert i.e. komplette version 1.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/production/Einfaches Spiel/gpatarinski/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/production/Einfaches Spiel/gpatarinski/controller/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/production/Einfaches Spiel/gpatarinski/model/GewinnModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/production/Einfaches Spiel/gpatarinski/model/GewinnModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/production/Einfaches Spiel/gpatarinski/controller/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/production/Einfaches Spiel/gpatarinski/view/GrafikFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/production/Einfaches Spiel/gpatarinski/view/GrafikFrame.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/production/Einfaches Spiel/gpatarinski/view/GrafikPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/production/Einfaches Spiel/gpatarinski/view/GrafikPanel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gpatarinski/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gpatarinski/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gpatarinski/model/GewinnModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gpatarinski/model/GewinnModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gpatarinski/view/GrafikFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gpatarinski/view/GrafikFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gpatarinski/view/GrafikPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gpatarinski/view/GrafikPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,6 +50,9 @@
     &quot;accountId&quot;: &quot;aefa0518-0a76-42c0-b21d-1a3607e9ceeb&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/gpatarinski/view/GrafikPanel.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
@@ -107,7 +112,7 @@
       <updated>1791743849458</updated>
       <workItem from="1791743850931" duration="1081000" />
       <workItem from="1791744935452" duration="257000" />
-      <workItem from="1791785660861" duration="220000" />
+      <workItem from="1791785660861" duration="2302000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit to allow branch creation">
       <option name="closed" value="true" />
@@ -157,7 +162,15 @@
       <option name="project" value="LOCAL" />
       <updated>1791749495820</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Änderungen damit das Programm endlich richtig funktioniert i.e. komplette version 1.0">
+      <option name="closed" value="true" />
+      <created>1791785907126</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1791785907126</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,6 +184,7 @@
     <MESSAGE value="Branch für View und Controller erstellen und GrafikFrame fertiggestellt und GrafikPanel angefangen" />
     <MESSAGE value="Files wurden nicht anerkannt wegen Hierarchie also musste ich umändern" />
     <MESSAGE value="Änderungen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Änderungen" />
+    <MESSAGE value="Änderungen damit das Programm endlich richtig funktioniert i.e. komplette version 1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Änderungen damit das Programm endlich richtig funktioniert i.e. komplette version 1.0" />
   </component>
 </project>

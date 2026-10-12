@@ -11,11 +11,13 @@ public class Controller implements ActionListener {
     private final GrafikFrame view;
     private GewinnModel model;
 
+    //Fügt unseren erstellten Model von GewinnModel in Controller ein
     public Controller() {
         this.model = new GewinnModel();
         this.view = new GrafikFrame(this);
     }
 
+    //Überschreibt die actionPerformed Methode von GewinnModel
     @Override
     public void actionPerformed(ActionEvent e) {
         GrafikPanel panel = view.getPanel();
@@ -27,7 +29,7 @@ public class Controller implements ActionListener {
                 return;
             }
             model.berechneRunde(eingabe);
-            // --- Oberflächen-Update nach der Auswertung ---
+            //Update nach der Auswertung ---
             if (model.hatGewonnen()) {
                 panel.setRundenErgebnis("Gewonnen");
             } else if (model.hatVerloren()) {
@@ -37,7 +39,7 @@ public class Controller implements ActionListener {
             }
             panel.setComputerPunkte(Integer.toString(model.getComputerZahl()));
             panel.setGesamtPunkte("Gesamtpunkte: " + model.getGesamtPunkte());
-            // --- Ende Update ---
+            //Ende Update
         } else if (e.getActionCommand().equals("btn")) {
             if (model.hatGewonnen() || model.hatVerloren()) {
                 model = new GewinnModel();
@@ -49,6 +51,7 @@ public class Controller implements ActionListener {
         }
     }
 
+    //Setzt den Controller ein -> Startet das Programm
     public static void main(String[] args) {
         new Controller();
     }

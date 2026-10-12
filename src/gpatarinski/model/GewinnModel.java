@@ -11,9 +11,13 @@ public class GewinnModel {
     public GewinnModel() {
         gesamtPunkte = 30;
     }
+
+    //Erstellt eine zufällige Zahl von 0 bis 9 das den Computer nutzt und ausgibt
     public void berechneComputerZahl() {
         computerZahl = random.nextInt(1,10);
     }
+
+    //Berechnet die Punkteänderung nach eine Runde
     public void berechneRunde(int spielerZahl) {
         this.spielerZahl = spielerZahl;
         berechneComputerZahl();
@@ -26,11 +30,8 @@ public class GewinnModel {
         }
         this.gesamtPunkte += this.rundenErgebnis;
     }
-    public void reset() {
-        gesamtPunkte = 30;
-        rundenErgebnis = 0;
-        computerZahl = 0;
-    }
+
+    //getter-Methoden
     public boolean hatGewonnen() {
         return gesamtPunkte >= 100;
     }
