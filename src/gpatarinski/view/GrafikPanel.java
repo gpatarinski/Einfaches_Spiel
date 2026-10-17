@@ -68,6 +68,12 @@ public class GrafikPanel extends JPanel {
     public void setEingabeValue(String eingabeValue) {
         this.eingabe.setText(eingabeValue);
     }
+    public void setEingabeEnable(boolean enable) {
+        this.eingabe.setEnabled(enable);
+    }
+    public void setNochMalBtnEnabled(boolean enable) {
+        this.nochMalBtn.setEnabled(enable);
+    }
 
 
     // Code for Labels
