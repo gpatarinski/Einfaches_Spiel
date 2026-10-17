@@ -16,6 +16,9 @@ public class Controller implements ActionListener {
     public Controller() {
         this.model = new GewinnModel();
         this.view = new GrafikFrame(this);
+
+        view.getPanel().setEingabeEnable(true);
+        view.getPanel().setNochMalBtnEnabled(false);
     }
 
     //Überschreibt die actionPerformed Methode von GewinnModel
@@ -40,6 +43,8 @@ public class Controller implements ActionListener {
             }
             panel.setComputerPunkte(Integer.toString(model.getComputerZahl()));
             panel.setGesamtPunkte("Gesamtpunkte: " + model.getGesamtPunkte());
+            panel.setEingabeEnable(false);
+            panel.setNochMalBtnEnabled(true);
             if (model.hatGewonnen() || model.getRundenErgebnis() > 0) {
                 panel.setLabelColor(Color.GREEN);
             } else if (model.hatVerloren() || model.getRundenErgebnis() < 0) {
@@ -56,6 +61,8 @@ public class Controller implements ActionListener {
             panel.setRundenErgebnis("");
             panel.setEingabeValue("");
             panel.setGesamtPunkte("Gesamtpunkte: " + model.getGesamtPunkte());
+            panel.setEingabeEnable(true);
+            panel.setNochMalBtnEnabled(false);
         }
     }
 
