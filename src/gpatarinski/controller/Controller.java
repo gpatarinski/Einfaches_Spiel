@@ -4,6 +4,7 @@ import gpatarinski.model.GewinnModel;
 import gpatarinski.view.GrafikFrame;
 import gpatarinski.view.GrafikPanel;
 
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -39,6 +40,13 @@ public class Controller implements ActionListener {
             }
             panel.setComputerPunkte(Integer.toString(model.getComputerZahl()));
             panel.setGesamtPunkte("Gesamtpunkte: " + model.getGesamtPunkte());
+            if (model.hatGewonnen() || model.getRundenErgebnis() > 0) {
+                panel.setLabelColor(Color.GREEN);
+            } else if (model.hatVerloren() || model.getRundenErgebnis() < 0) {
+                panel.setLabelColor(Color.RED);
+            } else {
+                panel.setLabelColor(Color.WHITE);
+            }
             //Ende Update
         } else if (e.getActionCommand().equals("btn")) {
             if (model.hatGewonnen() || model.hatVerloren()) {

@@ -80,4 +80,8 @@ public class GrafikPanel extends JPanel {
     public void setComputerPunkte(String computerPunkte) {
         this.computerPunkte.setText(computerPunkte);
     }
+    public void setLabelColor(Color color) {
+        this.rundenErgebnis.setBackground(color);
+        this.gesamtPunkte.setBackground(color);
+    }
 }
